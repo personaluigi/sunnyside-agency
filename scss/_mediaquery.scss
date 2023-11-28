@@ -1,0 +1,180 @@
+@media screen and (min-width: 900px) {
+    .header {
+        background-image: url(../images/desktop/image-header.jpg);
+        height: 90vh;
+
+        &-div {
+            min-width: 900px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px 15px;
+
+            img {
+                width: 170px;
+            }
+
+            &-nav {
+
+                ul {
+                    list-style: none;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 1.2rem;
+
+                    li {
+                        a {
+                            font-size: 1.1rem;
+                            color: white;
+                            text-decoration: none;
+                            transition: .2s ease-in-out;
+
+                            &:hover {
+                                color: hsl(213, 9%, 39%);
+                            }
+                        }
+                    }
+
+                    button {
+                        width: 130px;
+                        cursor: pointer;
+                        font-size: 1.2rem;
+                        padding: 10px;
+                        background-color: white;
+                        border: none;
+                        border-radius: 25px;
+                        font-family: 'Fraunces', sans-serif;
+                        margin-left: 2rem;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            color: white;
+                            background-color: rgba(255, 255, 255, 0.3);
+                        }
+                    }
+                }
+            }
+
+            #btn-menu {
+                display: none;
+            }
+        }
+
+        &-intro {
+
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .main {
+        .section-grid-content {
+            display: grid;
+            grid-template-areas:
+                'contentDiv transformImg'
+            ;
+
+            .transform {
+                grid-area: transformImg;
+            }
+
+            .grid-div-one {
+                grid-area: contentDiv;
+            }
+
+            .grid-content {
+                text-align: left;
+
+                h2 {
+                    font-size: 2rem;
+                }
+
+                button {
+                    cursor: pointer;
+                    transition: .2s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+
+                @media screen and (min-width: 1200px) {
+                    text-align: left;
+                    padding: 9rem 8rem;
+
+                    h2 {
+                        font-size: 3rem;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .grid-img {
+                line-height: 0;
+            }
+
+            .pic-graphic-design {
+                background-image: url(../images/desktop/image-graphic-design.jpg);
+
+                div {
+                    width: 340px;
+                }
+            }
+
+            .pic-photography {
+                background-image: url(../images/desktop/image-photography.jpg);
+
+                div {
+                    width: 340px;
+                }
+            }
+        }
+    }
+
+    .section-clients {
+        padding: 6rem 0;
+
+        .testimonials {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+
+            &-div {
+                width: 25%;
+            }
+        }
+    }
+
+    .footer {
+        background-color: hsl(162, 72%, 40%);
+        padding-bottom: 4rem;
+
+        &-grid-img {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            line-height: 0;
+        }
+        #nav-footer {
+    
+            a {
+                transition: .3s ease;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    
+        #medias {
+            .fa-brands {
+                cursor: pointer;
+                transition: .2s ease-in-out;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}

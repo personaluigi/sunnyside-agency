@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #FFF;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: aquamarine;
+  border-radius: 10px;
+  border: 3px solid #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: url(../images/mobile/image-header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  font-family: "Barlow", sans-serif;
+}
+.header-div {
+  position: relative;
+  padding: 20px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 899px) {
+  .header-div-nav {
+    padding: 0 2rem;
+    overflow: hidden;
+    background-color: white;
+    width: 75%;
+    height: 0;
+    position: absolute;
+    top: 78px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.3s ease-in-out;
+  }
+  .header-div-nav ul {
+    padding-top: 8px;
+    list-style: none;
+  }
+  .header-div-nav ul li a {
+    color: hsl(213, 9%, 39%);
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .header-div-nav ul button {
+    font-family: "Fraunces", sans-serif;
+    width: 80%;
+    display: block;
+    margin: 2.2rem auto 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: hsl(51, 100%, 49%);
+  }
+  .header-div .nav-active {
+    height: 283px;
+  }
+  .header-div #btn-menu {
+    padding: 5px;
+    display: flex;
+    border: none;
+    background: none;
+  }
+  .header-div #btn-menu #hamburguer {
+    border-top: 2px solid white;
+    width: 35px;
+  }
+  .header-div #btn-menu #hamburguer:before, .header-div #btn-menu #hamburguer:after {
+    content: "";
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 35px;
+    margin-top: 11px;
+  }
+}
+.header-intro {
+  margin-top: 6rem;
+  text-align: center;
+}
+.header-intro h1 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 3rem;
+}
+
+.main .section-grid-content .grid-content {
+  text-align: center;
+  padding: 3rem 22px;
+}
+.main .section-grid-content .grid-content h2 {
+  color: hsl(212, 27%, 19%);
+  font-size: 1.9rem;
+  font-weight: 900;
+  font-family: "Fraunces", sans-serif;
+  padding-bottom: 2.2rem;
+}
+.main .section-grid-content .grid-content p {
+  font-family: "Barlow", sans-serif;
+  color: hsl(212, 27%, 19%);
+  padding-bottom: 2.5rem;
+}
+.main .section-grid-content .grid-content #btn-yellow {
+  border: none;
+  background: none;
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: hsl(212, 27%, 19%);
+  font-family: "Fraunces", sans-serif;
+  text-shadow: 0.5rem 0.5rem 0.5rem hsl(51, 100%, 49%);
+}
+.main .section-grid-content .grid-content #btn-red {
+  border: none;
+  background: none;
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: hsl(212, 27%, 19%);
+  font-family: "Fraunces", sans-serif;
+  text-shadow: 0.5rem 0.5rem 0.5rem hsl(7, 99%, 70%);
+}
+.main .section-grid-content .pic-grid img {
+  width: 100%;
+}
+.main .section-grid-content .pic-graphic-design {
+  position: relative;
+  background-image: url(../images/mobile/image-graphic-design.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 550px;
+}
+.main .section-grid-content .pic-graphic-design div {
+  width: 80%;
+  text-align: center;
+  position: absolute;
+  top: 370px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.main .section-grid-content .pic-graphic-design div h3 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  color: hsl(167, 40%, 24%);
+}
+.main .section-grid-content .pic-graphic-design div p {
+  font-size: 1rem;
+  font-family: "Barlow", sans-serif;
+  color: hsl(167, 40%, 24%);
+}
+.main .section-grid-content .pic-photography {
+  position: relative;
+  background-image: url(../images/mobile/image-photography.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 550px;
+}
+.main .section-grid-content .pic-photography div {
+  width: 80%;
+  text-align: center;
+  position: absolute;
+  top: 370px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.main .section-grid-content .pic-photography div h3 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  color: hsl(212, 27%, 19%);
+}
+.main .section-grid-content .pic-photography div p {
+  font-size: 1rem;
+  font-family: "Barlow", sans-serif;
+  color: hsl(212, 27%, 19%);
+}
+.main .section-clients {
+  margin: 2.6rem 0;
+}
+.main .section-clients h2 {
+  text-align: center;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  color: hsl(213, 9%, 39%);
+}
+.main .section-clients .testimonials {
+  margin: 0.8rem 0;
+  padding: 15px;
+}
+.main .section-clients .testimonials-div {
+  padding: 3rem 20px 0 20px;
+  text-align: center;
+}
+.main .section-clients .testimonials-div img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+}
+.main .section-clients .testimonials-div p {
+  font-family: "Barlow", sans-serif;
+  color: hsl(213, 9%, 39%);
+  padding-bottom: 1rem;
+}
+.main .section-clients .testimonials-div h4 {
+  font-size: 1.2rem;
+  color: hsl(212, 27%, 19%);
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
+  padding-bottom: 0.3rem;
+}
+.main .section-clients .testimonials-div span {
+  font-family: "Barlow", sans-serif;
+  color: hsl(213, 9%, 39%);
+  font-size: 0.9rem;
+}
+
+.footer {
+  background-color: hsl(162, 72%, 40%);
+  padding-bottom: 4rem;
+}
+.footer-grid-img {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  line-height: 0;
+}
+.footer-grid-img img {
+  width: 100%;
+}
+.footer #logo {
+  display: block;
+  margin: 2rem auto;
+  width: 180px;
+}
+.footer #nav-footer {
+  text-align: center;
+}
+.footer #nav-footer a {
+  padding: 10px;
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+  color: hsl(167, 40%, 24%);
+  font-size: 1.1rem;
+}
+.footer #medias {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.footer #medias .fa-brands {
+  font-size: 1.8rem;
+  color: hsl(167, 40%, 24%);
+}
+
+@media screen and (min-width: 900px) {
+  .header {
+    background-image: url(../images/desktop/image-header.jpg);
+    height: 90vh;
+  }
+  .header-div {
+    min-width: 900px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 15px;
+  }
+  .header-div img {
+    width: 170px;
+  }
+  .header-div-nav ul {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .header-div-nav ul li a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+  }
+  .header-div-nav ul li a:hover {
+    color: hsl(213, 9%, 39%);
+  }
+  .header-div-nav ul button {
+    width: 130px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    font-family: "Fraunces", sans-serif;
+    margin-left: 2rem;
+    transition: 0.2s ease-in-out;
+  }
+  .header-div-nav ul button:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .header-div #btn-menu {
+    display: none;
+  }
+  .header-intro h1 {
+    font-size: 4rem;
+  }
+  .main .section-grid-content {
+    display: grid;
+    grid-template-areas: "contentDiv transformImg";
+  }
+  .main .section-grid-content .transform {
+    grid-area: transformImg;
+  }
+  .main .section-grid-content .grid-div-one {
+    grid-area: contentDiv;
+  }
+  .main .section-grid-content .grid-content {
+    text-align: left;
+  }
+  .main .section-grid-content .grid-content h2 {
+    font-size: 2rem;
+  }
+  .main .section-grid-content .grid-content button {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  .main .section-grid-content .grid-content button:hover {
+    transform: scale(1.05);
+  }
+}
+@media screen and (min-width: 900px) and (min-width: 1200px) {
+  .main .section-grid-content .grid-content {
+    text-align: left;
+    padding: 9rem 8rem;
+  }
+  .main .section-grid-content .grid-content h2 {
+    font-size: 3rem;
+  }
+  .main .section-grid-content .grid-content p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .main .section-grid-content .grid-img {
+    line-height: 0;
+  }
+  .main .section-grid-content .pic-graphic-design {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+  }
+  .main .section-grid-content .pic-graphic-design div {
+    width: 340px;
+  }
+  .main .section-grid-content .pic-photography {
+    background-image: url(../images/desktop/image-photography.jpg);
+  }
+  .main .section-grid-content .pic-photography div {
+    width: 340px;
+  }
+  .section-clients {
+    padding: 6rem 0;
+  }
+  .section-clients .testimonials {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .section-clients .testimonials-div {
+    width: 25%;
+  }
+  .footer {
+    background-color: hsl(162, 72%, 40%);
+    padding-bottom: 4rem;
+  }
+  .footer-grid-img {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    line-height: 0;
+  }
+  .footer #nav-footer a {
+    transition: 0.3s ease;
+  }
+  .footer #nav-footer a:hover {
+    color: white;
+  }
+  .footer #medias .fa-brands {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  .footer #medias .fa-brands:hover {
+    color: white;
+  }
+}/*# sourceMappingURL=style.css.map */

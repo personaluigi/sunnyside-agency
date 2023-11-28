@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="scss/style.css">
+  <script src="js/index.js" defer></script>
+  <title>Sunnyside Agency Landing Page</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-div">
+      <img src="images/logo.svg" alt="icon_logo">
+      <nav class="header-div-nav">
+        <ul id="ul">
+          <li id="li"><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <button id="contact">Contact</button>
+        </ul>
+      </nav>
+      <button id="btn-menu">
+        <span id="hamburguer"></span>
+      </button>
+    </div>
+    <div class="header-intro">
+      <h1 id="title">We are creatives</h1>
+      <img src="images/icon-arrow-down.svg" alt="arrow_down">
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section-grid-content">
+      <div class="grid-img transform">
+        <picture class="pic-grid pic-transform">
+          <source media="(min-width: 1200px)" srcset="images/desktop/image-transform.jpg" type="image/jpg">
+          <img src="images/mobile/image-transform.jpg" alt="img_grid_transform">
+        </picture>
+      </div>
+      <div class="grid-content grid-div-one">
+        <h2>Transform your brand</h2>
+        <p>
+          We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <button id="btn-yellow">Learn more</button>
+      </div>
+      <div class="grid-img stand-out">
+        <picture class="pic-grid pic-stand-out">
+          <source media="(min-width: 1200px)" srcset="images/desktop/image-stand-out.jpg" type="image/jpg">
+          <img src="images/mobile/image-stand-out.jpg" alt="img_grid_transform">
+        </picture>
+      </div>
+      <div class="grid-content grid-div-two">
+        <h2>Stand out to the right audience</h2>
+        <p>
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+          build
+          and extend your brand in digital places.
+        </p>
+        <button id="btn-red">Learn more</button>
+      </div>
+      <div class="pic-graphic-design">
+        <div>
+          <h3>Graphic design</h3>
+          <p>
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+            potential
+            clients’ attention.
+          </p>
+        </div>
+      </div>
+      <div class="pic-photography">
+        <div>
+          <h3>Photography</h3>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-clients">
+      <h2>Client testimonials</h2>
+      <div class="testimonials">
+        <div class="testimonials-div">
+          <img src="images/image-emily.jpg" alt="emily_pic">
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+            hit.</p>
+          <h4>Emily R.</h4>
+          <span>Marketing Director</span>
+        </div>
+        <div class="testimonials-div">
+          <img src="images/image-thomas.jpg" alt="thomas_pic">
+          <p>
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+            enjoyable
+            experience.
+          </p>
+          <h4>Thomas S.</h4>
+          <span>Chief Operating Officer</span>
+        </div>
+        <div class="testimonials-div">
+          <img src="images/image-jennie.jpg" alt="jennie_pic">
+          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <h4>Jennie F.</h4>
+          <span>Business Owner</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid-img">
+      <picture class="pic-grid-footer">
+        <source media="(min-width: 1200px)" srcset="images/desktop/image-gallery-milkbottles.jpg" type="image/jpg">
+        <img src="images/mobile/image-gallery-milkbottles.jpg" alt="img_grid">
+      </picture>
+      <picture class="pic-grid-footer">
+        <source media="(min-width: 1200px)" srcset="images/desktop/image-gallery-orange.jpg" type="image/jpg">
+        <img src="images/mobile/image-gallery-orange.jpg" alt="img_grid">
+      </picture>
+      <picture class="pic-grid-footer">
+        <source media="(min-width: 1200px)" srcset="images/desktop/image-gallery-cone.jpg" type="image/jpg">
+        <img src="images/mobile/image-gallery-cone.jpg" alt="img_grid">
+      </picture>
+      <picture class="pic-grid-footer">
+        <source media="(min-width: 1200px)" srcset="images/desktop/image-gallery-sugarcubes.jpg" type="image/jpg">
+        <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="img_grid">
+      </picture>
+    </div>
+    <img src="images/logo.svg" alt="icon_logo" id="logo">
+    <div id="nav-footer">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+    </div>
+    <div id="medias">
+      <i class="fa-brands fa-square-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-pinterest"></i>
+    </div>
+  </footer>
+</body>
+
+</html>
